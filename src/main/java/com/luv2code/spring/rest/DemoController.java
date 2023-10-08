@@ -18,7 +18,7 @@ public class DemoController {
         this.coach = coach;
     }
 
-    @GetMapping("/dailyworkout")
+    @GetMapping("/dailyworkout3")
     public String getDailyWorkout() {
         return coach.getDailyWorkout();
     }
