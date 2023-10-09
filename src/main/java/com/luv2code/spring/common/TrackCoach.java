@@ -1,11 +1,16 @@
 package com.luv2code.spring.common;
 
-import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
-@Primary
 @Component
+@Lazy
 public class TrackCoach implements Coach{
+
+
+    public TrackCoach() {
+        System.out.println("In constructor: "+ getClass().getSimpleName());
+    }
 
     @Override
     public String getDailyWorkout() {
